@@ -1,0 +1,250 @@
+:root{
+    --color-smheader-bg:  #DAAD86 ;
+    --color-rgb-lgheader-bg :#8D8741 ;
+    --color-font:azure;
+    --borderside:1px solid #659DBD;
+}
+
+body{
+    margin:0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color:var(--color-font)
+    
+   
+}
+/* Header with my name and the list of  sections */
+header{
+    height: 13vh;
+    padding-top: 20px;
+    background-color:var(--color-rgb-lgheader-bg);
+}
+header h1{
+    margin-top: 50%;
+    padding: 5px 5px 5px 20px;
+    background-color: var(--color-rgb-lgheader-bg);
+    display: inline;
+    border:1px solid;
+
+}
+
+/* Sections navigation styles  */
+.nav-section{
+    height: 10vh;
+    display: inline-block;
+    margin-left: 70%;
+    padding:0;
+    color: var(--color-smheader-bg);
+}
+
+.nav-section ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 20px;
+}
+a{
+    color:var(--color-smheader-bg); 
+}
+
+/* top background image with header  */
+.Image-bg{
+    background-image: url(./Images/earthybg.jpeg);
+    background-repeat: no-repeat;
+    object-fit:cover;
+    background-size: 100%;
+    height: 25vh;
+    width:auto;
+}
+.Image-bg h2{
+    color:var(--color-font);
+    font-size: 50px; 
+    display: inline-block;  
+    margin-top: 9%;
+    margin-left: 77%;
+}
+/* Main holder */
+.content-holder{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: var(--color-smheader-bg);
+   
+}
+.content-holder section{
+    width: 95%;
+    height:100%;
+}
+
+/* About me section style */
+
+.about-me{
+    width:95%;
+    display: flex;
+    flex:0 1 auto;
+}
+
+.about-me h3{
+    font-size: 58PX;
+    text-align: center;
+    margin-left: 26px;
+    width:15%;
+    border-right: var(--borderside);
+}
+.about-me-img{
+    width: 84%;
+    margin-left: 10px;
+}
+
+.about-me-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;  
+    
+}
+/* My work section style */
+
+.my-work-section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.my-work-section > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    margin-right: 2%;
+}
+.my-work-section h3{
+    width: 100%;
+    text-align:end;
+    font-size: 60px;
+    padding-right: 5px;
+    margin-top: 0;
+    
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 120px);
+    grid-gap: 25px;
+    object-fit: cover;
+    width:80%;
+    padding-left:12px;
+    border-left: var(--borderside);
+
+}
+
+.work-grid img{
+    width: 100%;
+    height: 99%;
+    object-fit:cover;
+    opacity:0.5;
+}
+
+.img-item h4{
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background-color: var(--color-smheader-bg);
+    display: inline;
+    font-size: 24px;
+    
+}
+#img-item-1{
+    grid-column: 1 / span 2;  
+   grid-row: 1 / span 3;
+
+}
+
+/* contact me section style  */
+.contact-me{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 25px;
+    color:var(--color-font);
+}
+.contact-me > div{
+    width: 16%;
+    display: flex;
+    font-size: 52px;
+    border-right: var(--borderside);
+    padding-right: 12px;
+    margin-left: 1px;
+    text-align: center;
+}
+
+.contact-me nav ul{
+    list-style-type: none;
+    display:flex;
+    color:var(--color-font);
+    justify-content: end;
+    
+}
+.contact-me nav ul li{
+    height: 50px;
+    display:inline;
+    margin: 25px;
+    font-size: 38px;
+    text-decoration-line: underline;
+
+}
+/* Hover styling  */
+.work-grid img:hover{
+    opacity: 1;
+}
+/* Viewport adjustmets */
+
+@media screen and (max-width: 992px) {
+    .content-holder section{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    } 
+    header h1{ 
+        margin:0;
+
+    }
+    .Image-bg h2{
+        margin:0;
+    }
+
+    
+    .nav-section{
+        margin: 0;
+        padding: 0;
+
+    }
+    .work-grid{
+        border:none;
+    }
+    
+    .contact-me{
+        padding-inline-start: 0;
+        align-items: none;
+        margin: 0;
+        display: block;
+        
+    
+    }
+    .contact-me > div{
+        border:none;
+
+    }
+    
+    .about-me h3{
+        border:none;
+    }
+    .contact-me nav ul li{
+        font-size: 25px;
+    }
+
+
+}
+
+
+
+
