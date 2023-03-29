@@ -4,9 +4,10 @@
  I also sought help from various websites like Developer.mozilla.org , w3schools.com, 
  css-tricks.com. I was able to get my cover picture from wallpapers.com and my background theme from visme.com.
 
- Here is a picture of the my website.
+ Here are pictures of the my website in different views. 
 
- ![MyPOrtfolio.](./assests/Images/MyPortfolioPic.png)
+ ![MyPortfolio.](./assests/Images/MyPortfolioPic.png)
+ ![MyPortfoliosmaller.](/assests/Images/myPortfoliosmallerscreen.png)
 
 
 # Links to my Github and live website:
